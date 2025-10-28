@@ -1,0 +1,6 @@
+# Ignorar pastas __pycache__ em qualquer nível
+**/__pycache__/
+**/*.pkl
+**/*.log
+.env
+.venv

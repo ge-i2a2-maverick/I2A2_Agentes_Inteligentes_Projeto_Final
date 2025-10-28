@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  minio:
+    image: minio/minio:latest
+    container_name: minio-server
+    ports:
+      - "9010:9000"  # API
+      - "9011:9001"  # Console Web
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    volumes:
+      - minio_data:/data
+    command: server /data --console-address ":9011"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9010/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+  mysql_db:
+    image: mysql:8.0
+    container_name: nfe_mysql_9012
+    restart: always
+    environment:
+      MYSQL_DATABASE: nfe_agente
+      MYSQL_ROOT_PASSWORD: root_password_segura
+      MYSQL_USER: nfe_user
+      MYSQL_PASSWORD: 123456
+    ports:
+      - "9012:3306"
+    volumes:
+      - ./init_db/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - db_data:/var/lib/mysql
+
+volumes:
+  minio_data:
+    driver: local
+  db_data:
+    driver: local  

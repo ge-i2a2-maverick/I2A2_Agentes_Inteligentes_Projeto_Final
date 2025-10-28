@@ -1,0 +1,101 @@
+MIT License
+
+Copyright (c) 2025 Sistema LenteFiscal - Processador Automático de NF-e
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Sobre este Projeto
+
+**LenteFiscal** é um sistema automatizado para processamento de Notas Fiscais 
+Eletrônicas (NF-e e NFC-e) utilizando tecnologias de Inteligência Artificial,
+armazenamento em nuvem (MinIO) e banco de dados relacional (MySQL).
+
+### Componentes do Sistema
+
+- **MinIO Manager**: Gerenciamento de arquivos em object storage
+- **NF-e Extractor Agent**: Extração de dados usando OpenAI GPT-4 Vision
+- **NF-e Manager**: Gerenciamento de dados no banco MySQL
+- **Main Processor**: Orquestrador principal do fluxo de processamento
+
+### Tecnologias Utilizadas
+
+- Python 3.8+
+- MinIO (Object Storage)
+- MySQL 8.0+
+- OpenAI GPT-4 Vision API
+- LangChain
+- Docker (opcional)
+
+### Autores
+
+Sistema TI - 2025
+
+### Contribuições
+
+Contribuições são bem-vindas! Sinta-se livre para:
+- Reportar bugs
+- Sugerir novas funcionalidades
+- Enviar pull requests
+- Melhorar a documentação
+
+### Aviso Legal
+
+Este software é fornecido "como está", sem garantias de qualquer tipo.
+Os desenvolvedores não se responsabilizam por:
+- Perda de dados
+- Falhas no processamento de notas fiscais
+- Custos relacionados ao uso de APIs de terceiros (OpenAI)
+- Conformidade com regulamentações fiscais específicas
+
+**Importante**: Este sistema é uma ferramenta de apoio. A responsabilidade
+pela conformidade fiscal e validação dos dados extraídos é do usuário final.
+
+### Dependências de Terceiros
+
+Este projeto utiliza as seguintes bibliotecas e serviços:
+- MinIO (Apache License 2.0)
+- MySQL (GPL v2)
+- OpenAI API (Termos de Serviço OpenAI)
+- LangChain (MIT License)
+- Python libraries (diversas licenças open source)
+
+Certifique-se de estar em conformidade com os termos de uso de cada serviço.
+
+### Privacidade e Segurança
+
+- **Dados Sensíveis**: Notas fiscais contêm informações sensíveis. 
+  Garanta que seu ambiente está adequadamente protegido.
+- **API Keys**: Nunca compartilhe suas chaves de API publicamente.
+- **Backup**: Mantenha backups regulares de seus dados.
+- **Compliance**: Verifique a conformidade com LGPD e regulamentações locais.
+
+### Suporte
+
+Para dúvidas, problemas ou sugestões:
+- Abra uma issue no repositório do projeto
+- Consulte a documentação completa no README.md
+- Revise os logs do sistema para troubleshooting
+
+---
+
+**Data de Criação**: 27 de Outubro de 2025  
+**Versão**: 1.0.0  
+**Status**: Estável para Produção
