@@ -106,19 +106,19 @@ A aplicação estará disponível em: `http://localhost:8501`
 ```
 .
 ├── src
-├  └── main
-├      └── main.py         # Aplicação batch   
-├      └── app.py          # Portal aplicação
-├      └── minio_manager.py # Gerenciador de arquivos no MinIO
-├      └── nfe_extractor_agent.py # Extrator de dados com IA
-├      └── nfe_manager.py # Gerenciador do banco de dados
+│    └── main
+│         ├── main.py         # Aplicação batch   
+│         ├── app.py          # Portal aplicação
+│         ├── minio_manager.py # Gerenciador de arquivos no MinIO
+│         ├── nfe_extractor_agent.py # Extrator de dados com IA
+│         └── nfe_manager.py # Gerenciador do banco de dados
 ├── init_db
-    └── init.sql  
+│    └── init.sql  
 ├── .env                   # Configurações (não versionar!)
 ├── .env.example           # Exemplo de configurações
 ├── requirements.txt       # Dependências Python
 ├── docker-compose.yml     # Configuração Docker do MinIO
-└── README.md              # Este arquivo
+├── README.md              # Este arquivo
 └── LICENSE                # Licença
 ```
 
@@ -150,8 +150,6 @@ A aplicação estará disponível em: `http://localhost:8501`
 ### Bucket não existe
 - A aplicação cria automaticamente o bucket se não existir
 - Verifique as permissões da access key
-
-## 📝 Licença
 
 
 ## 📝 Licença
