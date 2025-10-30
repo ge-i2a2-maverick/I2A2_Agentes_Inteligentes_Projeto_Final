@@ -101,7 +101,7 @@ class NFeProcessor:
         # Cria buckets se não existirem
         self._criar_buckets()
         
-        self.log("\n" + "="*80)
+        self.log("="*80)
         self.log("PROCESSADOR INICIALIZADO COM SUCESSO")
         self.log("="*80 + "\n")
     
@@ -372,7 +372,7 @@ class NFeProcessor:
     def executar_ciclo(self):
         """Executa um ciclo de processamento"""
         try:
-            self.log("\n" + "="*80)
+            self.log("="*80)
             self.log(f"INICIANDO CICLO DE VERIFICAÇÃO - {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}")
             self.log("="*80)
             
@@ -397,7 +397,7 @@ class NFeProcessor:
                     erros += 1
             
             # Relatório do ciclo
-            self.log("\n" + "="*80)
+            self.log("="*80)
             self.log("CICLO CONCLUÍDO")
             self.log(f"  Total processado: {total}")
             self.log(f"  ✓ Sucesso: {sucesso}")
