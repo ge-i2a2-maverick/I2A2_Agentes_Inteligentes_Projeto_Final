@@ -154,7 +154,9 @@ A aplicação estará disponível em: `http://localhost:8501`
 
 ## 📝 Licença
 
-Copyright (c) 2025 João Silva
+MIT License
+
+Copyright (c) 2025 Sistema LenteFiscal - Processador Automático de NF-e
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
